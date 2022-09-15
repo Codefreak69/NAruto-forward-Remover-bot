@@ -3,18 +3,17 @@ import os
 
 
 #Bot Token
-START_TEXT = os.environ.get('StartMsg',None)
-HELP_TEXT = os.environ.get('HelpMsg',None)
-token = os.environ.get('BOT_TOKEN',None)
+
+token = "5719383526:AAETSEbKSYAQr3dXgYrArBWaLX5KadCUOaM"
 
 
 #Start Message
 def start_text(u,c):
-    u.message.reply_text(START_TEXT)
+    u.message.reply_text("StartMsg")
 
 #Help Message
 def help_text(u,c):
-    u.message.reply_text(HELP_TEXT)
+    u.message.reply_text("HelpTxt")
 
 
 #Send document from user
